@@ -41,7 +41,9 @@ public class GuineaPigCarCar extends GuineaPig {
     }
 
     public void check_and_pupu(){
-        if(!checkAndPupuIfNeeded().isEmpty()){
+        String pupu = checkAndPupuIfNeeded();
+        if(!pupu.isEmpty()){
+            System.out.println(pupu);
             car.resetSpeed();
         }
     }
