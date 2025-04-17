@@ -1,8 +1,11 @@
-import Car.*;
-import Car.CarType.CARTYPE;
+package models;
+
+import models.Car.*;
+import models.Car.CarType.CARTYPE;
+import models.guineaPig.GuineaPig;
 
 
-public class GuineaPigCarCar extends GuineaPig{
+public class GuineaPigCarCar extends GuineaPig {
     private Car car;
     private int distance;
     public GuineaPigCarCar(String name, CARTYPE type) {
@@ -17,6 +20,11 @@ public class GuineaPigCarCar extends GuineaPig{
         }
 
     }
+
+    public int getSpeed(){
+        return car.getSpeed();
+    }
+
     public void move(){
         distance += car.getSpeed();
     }

@@ -1,4 +1,4 @@
-package Car;
+package models.Car;
 
 public class TrashTruck extends Car {
 
