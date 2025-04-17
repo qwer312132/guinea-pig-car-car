@@ -18,6 +18,10 @@ public class Car {
         return this.speed;
     }
 
+    public void setNumAccelerate(int numAccelerate) {
+        this.numAccelerate = numAccelerate;
+    }
+
     public void accelerate() {
         this.speed += this.numAccelerate;
     }
