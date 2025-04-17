@@ -4,5 +4,6 @@ public class PoliceCar extends Car {
 
     public PoliceCar() {
         super(14, 0);
+        setNumAccelerate(5); 
     }
 }
